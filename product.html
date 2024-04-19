@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="./js/tw.js"></script>
-  <title>Đăng nhâp</title>
+  <title>Châu Shop</title>
   <link href="./css/flowbite.min.css" rel="stylesheet" />
 </head>
 
@@ -52,8 +52,8 @@
               </li>
 
               <li>
-                <a href="./product.html"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Sản
+                <a href="#"
+                  class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0">Sản
                   phẩm</a>
               </li>
 
@@ -68,59 +68,22 @@
       </nav>
     </header>
 
-    <div class="flex flex-col items-center justify-center w-full h-full px-0 py-0 lg:mt-0 sm:px-9">
-      <div
-        class="w-full max-w-xl p-6 mx-auto overflow-auto shadow-lg rounded-xl glass-effect not-bg-glass border-[#eeeeee] border-[1px]">
-        <div class="hidden text-center lg:block">
-          <div class="max-w-[100px] sm:max-w-[150px] mx-auto">
-            <img src="./image/logo.png" class="w-full" alt="MMO Star Logo" />
-          </div>
-        </div>
-
-        <div class="lg:my-2">
-          <h2 class="block text-xl font-medium text-center">Đăng nhập</h2>
-        </div>
-
-        <div>
-          <form>
-            <div class="flex flex-col items-start mb-2 gap-y-1">
-              <label class="leading-6 cursor-pointer inline-block text-[15px]">Email</label>
-              <div class="relative w-full">
-                <input autocomplete="off" type="text"
-                  class="w-full p-3 mt-1 mb-3 tracking-wider border-[1px] rounded-lg bg-[#ffffff] border-[#eeeeee] outline-none"
-                  placeholder="Nhập email" name="email" required="" />
-              </div>
-            </div>
-
-            <div class="flex flex-col items-start mb-2 gap-y-1">
-              <div class="flex items-center justify-between w-full">
-                <label class="leading-6 cursor-pointer inline-block text-[15px]">Mật khẩu</label>
-                <a routerLink="/forgot-password" class="text-blue-500 font-medium text-[15px]" tabindex="-1">
-                  Quên mật khẩu</a>
-              </div>
-
-              <div class="relative w-full">
-                <input autocomplete="off" type="text"
-                  class="w-full p-3 mt-1 mb-3 tracking-wider border-[1px] rounded-lg bg-[#ffffff] border-[#eeeeee] outline-none"
-                  placeholder="Nhập mật khẩu" name="password" required="" minlength="8" />
-              </div>
-            </div>
-
-            <div class="w-full text-center">
-              <button
-                class="text-white bg-primary-700 hover:bg-primary-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">
-                Đăng nhập
-              </button>
-            </div>
-
-            <div class="flex items-center justify-between mt-5 text-center">
-              <p class="text-center text-[15px]">Bạn chưa có tài khoản?</p>
-              <a href="/register.html" class="text-blue-500 font-medium text-[15px]">Đăng ký</a>
-            </div>
-          </form>
-        </div>
-      </div>
+    <!-- Search bar -->
+    <div
+      class="shadow-md m-1 mx-auto w-full sm:w-[70%] max-w-xl py-3 px-4 rounded-lg text-center border-[#eeeeee] border-[1px]">
+      <p class="text-lg font-medium">Tìm kiếm sản phẩm</p>
+      <input type="text" placeholder="Nhập tên sản phẩm muốn tìm kiếm"
+        class="border-[1px] rounded-lg px-4 lg:px-5 py-2 bg-[#ffffff] border-[#eeeeee] outline-none w-full max-w-sm mt-2 mr-3 mb-3" />
+      <button
+        class="text-white bg-primary-700 hover:bg-primary-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">
+        Tìm kiếm
+      </button>
     </div>
+
+    <!-- Product -->
+    <div
+      class="grid grid-cols-2 gap-3 mx-auto mt-10 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 4xl:grid-cols-8 lg:gap-6"
+      id="products"></div>
 
     <!-- Footer -->
     <footer class="">
@@ -128,7 +91,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <div>
-              <ul class="mt-3 font-medium text-gray-500 dark:text-gray-400">
+              <ul class="mt-3 font-medium text-gray-500">
                 <li class="mb-3">
                   <a href="###" class="hover:underline">Tích điểm Quà tặng VIP</a>
                 </li>
@@ -140,7 +103,7 @@
           </div>
           <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-2 md:grid-cols-4">
             <div>
-              <ul class="mt-3 font-medium text-gray-500 dark:text-gray-400">
+              <ul class="mt-3 font-medium text-gray-500">
                 <li class="mb-3">
                   <a href="###" class="hover:underline">Tìm hiểu về mua trả góp</a>
                 </li>
@@ -150,7 +113,7 @@
               </ul>
             </div>
             <div>
-              <ul class="mt-3 font-medium text-gray-500 dark:text-gray-400">
+              <ul class="mt-3 font-medium text-gray-500">
                 <li class="mb-3">
                   <a href="###" class="hover:underline">Giới thiệu công ty</a>
                 </li>
@@ -160,7 +123,7 @@
               </ul>
             </div>
             <div>
-              <ul class="mt-3 font-medium text-gray-500 dark:text-gray-400">
+              <ul class="mt-3 font-medium text-gray-500">
                 <li class="mb-3">
                   <a href="#" class="hover:underline">Gửi góp ý, khiếu nại</a>
                 </li>
@@ -170,7 +133,7 @@
               </ul>
             </div>
             <div>
-              <ul class="mt-3 font-medium text-gray-500 dark:text-gray-400">
+              <ul class="mt-3 font-medium text-gray-500">
                 <li class="mb-3">
                   <span>Gọi mua</span>
                   <a href="#" class="hover:underline text-blue-500">1900 232 460</a>
@@ -183,14 +146,14 @@
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="###"
-              class="hover:underline">Châu Shop</a>. All
+          <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="###" class="hover:underline">Châu Shop</a>.
+            All
             Rights Reserved.
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
-            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <a href="#" class="text-gray-500 hover:text-gray-900">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 viewBox="0 0 8 19">
                 <path fill-rule="evenodd"
@@ -199,7 +162,7 @@
               </svg>
               <span class="sr-only">Facebook page</span>
             </a>
-            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 viewBox="0 0 21 16">
                 <path
@@ -207,7 +170,7 @@
               </svg>
               <span class="sr-only">Discord community</span>
             </a>
-            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 viewBox="0 0 20 17">
                 <path fill-rule="evenodd"
@@ -216,7 +179,7 @@
               </svg>
               <span class="sr-only">Twitter page</span>
             </a>
-            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 viewBox="0 0 20 20">
                 <path fill-rule="evenodd"

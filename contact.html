@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="./js/tw.js"></script>
-  <title>Đăng nhâp</title>
+  <title>Liên hệ</title>
   <link href="./css/flowbite.min.css" rel="stylesheet" />
 </head>
 
@@ -52,14 +52,14 @@
               </li>
 
               <li>
-                <a href="./product.html"
+                <a href="#"
                   class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Sản
                   phẩm</a>
               </li>
 
               <li>
-                <a href="./contact.html"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Liên
+                <a href="#"
+                  class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0">Liên
                   hệ</a>
               </li>
             </ul>
@@ -71,14 +71,9 @@
     <div class="flex flex-col items-center justify-center w-full h-full px-0 py-0 lg:mt-0 sm:px-9">
       <div
         class="w-full max-w-xl p-6 mx-auto overflow-auto shadow-lg rounded-xl glass-effect not-bg-glass border-[#eeeeee] border-[1px]">
-        <div class="hidden text-center lg:block">
-          <div class="max-w-[100px] sm:max-w-[150px] mx-auto">
-            <img src="./image/logo.png" class="w-full" alt="MMO Star Logo" />
-          </div>
-        </div>
 
         <div class="lg:my-2">
-          <h2 class="block text-xl font-medium text-center">Đăng nhập</h2>
+          <h2 class="block text-xl font-medium text-center">Liên hệ</h2>
         </div>
 
         <div>
@@ -88,34 +83,26 @@
               <div class="relative w-full">
                 <input autocomplete="off" type="text"
                   class="w-full p-3 mt-1 mb-3 tracking-wider border-[1px] rounded-lg bg-[#ffffff] border-[#eeeeee] outline-none"
-                  placeholder="Nhập email" name="email" required="" />
+                  placeholder="Nhập email của bạn" name="email" required="" />
               </div>
             </div>
 
             <div class="flex flex-col items-start mb-2 gap-y-1">
               <div class="flex items-center justify-between w-full">
-                <label class="leading-6 cursor-pointer inline-block text-[15px]">Mật khẩu</label>
-                <a routerLink="/forgot-password" class="text-blue-500 font-medium text-[15px]" tabindex="-1">
-                  Quên mật khẩu</a>
+                <label class="leading-6 cursor-pointer inline-block text-[15px]">Nội dung</label>
               </div>
 
               <div class="relative w-full">
-                <input autocomplete="off" type="text"
-                  class="w-full p-3 mt-1 mb-3 tracking-wider border-[1px] rounded-lg bg-[#ffffff] border-[#eeeeee] outline-none"
-                  placeholder="Nhập mật khẩu" name="password" required="" minlength="8" />
+                <textarea placeholder="Nội dung của bạn" name="" id="" cols="30" rows="10"
+                  class="w-full p-3 mt-1 mb-3 tracking-wider border-[1px] rounded-lg bg-[#ffffff] border-[#eeeeee] outline-none"></textarea>
               </div>
             </div>
 
             <div class="w-full text-center">
               <button
                 class="text-white bg-primary-700 hover:bg-primary-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">
-                Đăng nhập
+                Gửi
               </button>
-            </div>
-
-            <div class="flex items-center justify-between mt-5 text-center">
-              <p class="text-center text-[15px]">Bạn chưa có tài khoản?</p>
-              <a href="/register.html" class="text-blue-500 font-medium text-[15px]">Đăng ký</a>
             </div>
           </form>
         </div>
